@@ -13,18 +13,22 @@
     }
 	table {
 		border-spacing: 0;
+        table-layout: fixed;
 	}
+    
 	td {
 		padding: 0;
+        table-layout: fixed;
 	}
 	img {
 		border: 0;
+        table-layout: fixed;
 	}
 
     .wrapper {
         width: 100%;
         table-layout: fixed;
-        /*background-color: ;*/
+        background-color: #660307 ;
         padding-block-end: 60px;
     }
 
@@ -35,22 +39,26 @@
         font-family: 'Inter', sans-serif;
         font-size: 16px;
         text-align: center;
+        table-layout: fixed;
+        padding: 0 10px;
     }
 
     .logo_login {
         width: 100%;
         padding: 28px 32px;
+        table-layout: fixed;
         
     }
     .logo, .login {
         width: 50%;
         max-width: 300px;
         float: left;
+        table-layout: fixed;
     }
 
     .login {
         text-align: end;
-        
+        table-layout: fixed;
         
     }
 
@@ -62,6 +70,7 @@
         background-color: #FFC0F4;
         font-weight: 700;
         color: #660307;
+        table-layout: fixed;
     }
 
     h1 {
@@ -71,6 +80,7 @@
         font-size: 48px;
         line-height: 56px;
         margin: 0;
+        table-layout: fixed;
     }
 
     p {
@@ -85,7 +95,10 @@
         border: 2px solid #660307;
         padding: 16px 32px;
         border-radius: 50px;
-        font-weight: 400;
+        font-weight: 700;
+        text-decoration: none;
+        color: #660307;
+        table-layout: fixed;
     }
 
     .two_columns {
@@ -102,12 +115,13 @@
     h2 {
         margin: 0;
         color: #660307;
+        table-layout: fixed;
+        
     }
 
-    @media (max-width: 580px) {
-        .women_laptop {
-            width: 100%;
-        }
+    .news1 {
+       width: 50%;
+       float: left;  
     }
 
     h3 {
@@ -116,10 +130,66 @@
         font-weight: 900;
         color: #660307;
         text-align: left;
+        table-layout: fixed;
         
     }
 
-    
+    h4 {
+        font-size: 20px;
+        color: #660307;
+        margin-bottom: 0;
+        table-layout: fixed;
+    }
+    .table_cells {
+        border-collapse: collapse;
+        width: 100%;
+              
+    }
+
+    .stack_column {
+        display: block;
+        width: 100% !important;
+        max-width: 100% ;
+        direction: ltr !important;
+    }
+
+    .news1 {
+        padding: 0 10px;
+        margin: 0;
+    }
+    .news1 img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto; /* Center the image */
+    }  
+
+    @media (max-width: 600px) {
+        .column {
+            width: 100%;
+        }
+        .women_laptop {
+            width: 100%;
+        }
+        .news1 {
+            width: 100%;
+        }
+        .news1 img {
+            width: 100%;
+        }
+        .r8 {
+        padding-right: 8px !important;
+        }
+        .footer img {
+            width: 100% !important; 
+            height: auto !important;
+        }
+
+        .foot_text p {
+            font-size: 14px !important;
+        }
+    }
+            
 </style>
 </head>
 <body>
@@ -143,7 +213,7 @@
                                 <table class="logo">
                                     <tr>
                                         <td>
-                                            <a href="#"><img src="assets/linktree_logo.png" alt="" width="132px" style="display: block;"></a>
+                                            <a href="#"><img src="https://i.ibb.co/wMYZLvH/linktree-bottom.png" alt="linktree_logo" width="132px" style="display: block;"></a>
                                         </td>
                                     </tr>
                                 </table>
@@ -171,7 +241,7 @@
                     <table class="banner" width="100%">
                         <tr>
                             <td style="padding: 28px 32px;" >
-                                <a href="#"><img src="assets/banner.png" alt="" width="100%"></a>
+                                <a href="#"><img src="https://i.ibb.co/7XXLxPk/banner.png" alt="banner" width="100%"></a>
                             </td>
                         </tr>
                     </table>
@@ -216,7 +286,7 @@
                                 <table class="column">
                                     <tr>
                                         <td>
-                                            <img src="assets/women_laptop.png" alt="" width="200" height="auto" class="women_laptop">
+                                            <img src="https://i.ibb.co/DVT6qXz/women-laptop.png" alt="" width="200" height="auto" class="women_laptop">
                                         </td>
                                     </tr>
                                 </table>
@@ -252,7 +322,7 @@
                         <tr>
                             <td style="padding: 28px 32px;">
                                 <table class="bt_banner">
-                                    <img src="assets/img1.png" alt="" width="100%">
+                                    <img src="https://i.ibb.co/YD9SD9X/img1.png" alt="" width="100%">
                                 </table>
                             </td>
                         </tr>
@@ -302,7 +372,7 @@
                                 <table class="column">
                                     <tr>
                                         <td>
-                                            <img src="assets/Jordana.png" alt="" width="200" height="auto" class="women_laptop">
+                                            <img src="https://i.ibb.co/MsW5SpB/Jordana.png" alt="" width="200" height="auto" class="women_laptop">
                                         </td>
                                     </tr>
                                 </table>
@@ -323,12 +393,14 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>
-                                            <p>
-                                                <a href="#" class="btn_sec" style="color: #660307; text-decoration: none; line-height: 24px; display: block;">linktr.ee/<b>thejordanagrace</b></a>
-                                            </p>
-                                        </td>
+                                    <td style="padding-bottom: 28px;">
+                                     <p >
+                                        <a href="#" class="btn_sec" style="color: #660307; text-decoration: none; line-height: 24px; font-size: 1rem; display: block;">
+                                            linktr.ee/<b>thejordanagrace</b></a>
+                                    </p>
+                                    </td>
                                     </tr>
+                                    
                                 </table>
                             </td>
                         </tr>
@@ -365,7 +437,7 @@
                     <table class="title_text" width="100%">
                         <tr>
                             <td valign="center" style="padding: 0 32px;">
-                                <img src="assets/gif1.gif" alt="" width="100%">
+                                <img src="https://i.ibb.co/s2MyrWq/gif1.giff" alt="" width="100%">
                             </td>
                         </tr>
                     </table>
@@ -444,11 +516,11 @@
                                 <table class="column">
                                     <tr>
                                         <td>
-                                            <img src="assets/leo.png" alt="" width="200" height="auto" class="women_laptop">
+                                            <img src="https://i.ibb.co/gyhtQRW/leo.png" alt="" width="200" height="auto" class="women_laptop">
                                         </td>
                                     </tr>
                                 </table>
-                                <table class="column" width="400px" style="float: left;">
+                                <table class="column" width="400" style="float: left;;">
                                     <tr>
                                         <td>
                                             <h2 style="font-size: 32px; font-weight: 900;">
@@ -507,7 +579,7 @@
                     <table class="column">
                         <tr>
                             <td>
-                                <img src="assets/the dessesert studio.png" alt="" width="200" height="auto" class="women_laptop">
+                                <img src="https://i.ibb.co/hWcCv00/the-dessesert-studio.png" alt="" width="200" height="auto" class="women_laptop">
                             </td>
                         </tr>
                     </table>
@@ -567,7 +639,7 @@
                     <table class="column">
                         <tr>
                             <td>
-                                <img src="assets/the home edit.png" alt="" width="200" height="auto" class="women_laptop">
+                                <img src="https://i.ibb.co/KhtJmC0/the-home-edit.png" alt="" width="200" height="auto" class="women_laptop">
                             </td>
                         </tr>
                     </table>
@@ -600,7 +672,7 @@
 
                     <table width="100%">
                         <tr>
-                            <td style="padding: 0 32px; padding-bottom: 28px;">
+                            <td style="padding-bottom: 28px;">
                                 <p >
                                     <a href="#" class="btn_sec" style="color: #660307; text-decoration: none; line-height: 24px; font-size: 1rem; display: block;"><b>Check out more Influential profiles</b></a>
                                 </p>
@@ -616,13 +688,285 @@
     <td style="padding: 10px;"></td>
 </tr>
 <!-- THE NEWS -->
+<tr>
+    <td style="background-color: #FFFFFEff; border-radius: 50px;">
+        <table width="100%">
 
-<!-- WE WANT TO HEAR FROM YOU -->
+            <tr>
+                <td>
+                    <table class="title_text" width="100%">
+                        <tr>
+                            <td valign="center" style="padding: 28px 32px; padding-bottom: 0;">
+                                <h1>THE NEWS</h1>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
 
-<!-- FOOTER -->
-        </table>
+            <tr>
+                <td style="padding: 28px 32px;">
+                    <table class="news_columns" width="100%">
+                        <tr>
+                            <td style="text-align: left;" >
+                                <table class="news1">
+                                    <tr>
+                                        <td>
+                                            <a href="#"><img src="https://i.ibb.co/6D0BhTs/the-news1.png" alt="news1" width="308"></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h4>
+                                                A Week in the Life of a Content Creator
+                                            </h4>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                For Geonna Snyder - known to her followers as TheArtGe - everyday is a chance to try something different. 
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 32px 0;">
+                                            <a href="" class="btn_sec";>Read More</a>
+                                        </td>
+                                    </tr>
+                                    
+                                </table>
+                                <table width="10">
+                                    <tr>
+                                        <td width="10"></td>
+                                    </tr>
+                                </table>
+
+
+                                <table class="news1">
+                                    <tr>
+                                        <td>
+                                            <a href="#"><img src="https://i.ibb.co/Jj62JHY/the-news2.png" alt="news2" width="308"></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h4>
+                                                A note from our CEO and co-founder, Alex Zaccaria
+                                            </h4>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                We recently announced another significant milestone – we have officially become a unicorn and we’re so happy to be on this journey with you!  
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 32px 0;">
+                                            <a href="" class="btn_sec";>Read More</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+
+                    
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 28px 32px;">
+                    <table class="news_columns" width="100%">
+                        <tr>
+                            <td style="text-align: left;">
+                                <table class="news1">
+                                    <tr>
+                                        <td>
+                                            <a href="#"><img src="https://i.ibb.co/xGKN5RB/news3.png" alt="news3" width="308"></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h4>
+                                                6 Tips On How To Find Influencers For Your Business  
+                                            </h4>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                Being a business owner is hard work! Promote your business and expand your customer base in an increasingly competitive environment.  
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 32px 0;">
+                                            <a href="" class="btn_sec";>Read More</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table class="news1">
+                                    <tr>
+                                        <td>
+                                            <a href="#"><img src="https://i.ibb.co/DG0HyJm/news4.png" alt="news4" width="308"></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h4>
+                                                Build Your Following with Comments 
+                                            </h4>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                In this video, we'll walk you through building a list of influencers, developing a posting strategy, and how to provide more value to your followers!  
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 32px 0px;">
+                                            <a href="" class="btn_sec";>Read More</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+
+                    
+                </td>
+            </tr>
+               
+        </table> 
     </td>
 </tr>
+
+<tr>
+    <td style="padding: 10px;"></td>
+</tr>
+
+<!-- WE WANT TO HEAR FROM YOU -->
+<tr>
+    <td style="background-color: #FFFFFEff; border-radius: 50px;">
+        <table width="100%">
+            <tr>
+                <td>
+                    <table class="title_text" width="100%">
+                        <tr>
+                            <td valign="center" style="padding: 28px 32px; margin: 0;">
+                                <h1 style="font-size: 32px;">We want to hear from you! </h1>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <table width="100%">
+            <tr>
+                <td style="padding: 0 32px;">
+                    <p align="center" style="margin-top: 0;">
+                        Hope you enjoyed the read! We would love to hear any ideas you have for the Community Newsletter. Let us know <a href="#" style="color: #660307; font-weight: 700;">here</a>.  
+                    </p>
+                </td>
+            </tr>
+        </table>
+        
+    </td>
+</tr>
+<tr>
+    <td style="padding: 10px;"></td>
+</tr>
+
+<!-- FOOTER -->
+<tr>
+    <td>
+        <table width="100%">
+            <tr>
+                <td style="padding: 32px 28px;">
+                    <table class="footer" width="100%">
+                        <tr>
+                            <td valign="top">
+
+                                <table class="foot_text" style="table-layout: fixed;">
+                                    <tr>
+                                        <td style="padding-bottom: 32px; table-layout: fixed;">
+                                            <a href="#"><img src="https://i.ibb.co/wMYZLvH/linktree-bottom.png" alt="linktree_bottom" width="190" style="line-height: 26px; max-width: 190;"></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style="color: #fff; font-size: 16px; font-weight: 700; margin: 0; padding-bottom: 32px;">Connect all of your content with just one link.</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p style="margin: 0; color: #fff; font-size: 12px; line-height: 16px; padding-bottom: 32px;">You received this because you are a Linktree user, you subscribed to updates from Linktree or joined the Linktree Newsletter. 🙌</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#" style="margin: 0; color: #fff; font-size: 12px; line-height: 16px;">Click here to unsubscribe</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" align="center" style="padding: 32px;">
+                                            <table style="margin: 0 auto;">
+                                            <tr>
+                                                <td class="stack_column">
+                                                    <table>
+                                                        <tr>
+                                                            <td class="r8" valign="top" style="padding-right: 16px;">
+                                                                <a href="#"><img src="https://i.ibb.co/WtNT7mZ/home-icon.png" alt="home_icon" width="44" height="auto" style="display: block;"></a>
+
+                                                            </td>
+                                                            <td class="r8" valign="top" style="padding-right: 16px;">
+                                                                <a href="#"><img src="https://i.ibb.co/7WjXTgV/facebook.png" alt="facebook" width="44" height="auto" style="display: block;"></a>
+
+                                                            </td>
+                                                            <td class="r8" valign="top" style="padding-right: 16px;">
+                                                                <a href="#"><img src="https://i.ibb.co/RyXqFtf/twitter.png" alt="twitter" width="44" height="auto" style="display: block;"></a>
+
+                                                            </td>
+                                                            <td class="r8" valign="top" style="padding-right: 16px;">
+                                                                <a href="#"><img src="https://i.ibb.co/175vPqD/ig.png" alt="ig" width="44" height="auto" style="display: block;"></a>
+
+                                                            </td>
+                                                            <td class="r8" valign="top" style="padding-right: 16px;">
+                                                                <a href="#"><img src="https://i.ibb.co/N28gtd3/youtube.png" alt="youtube" width="44" height="auto" style="display: block;"></a>
+
+                                                            </td>
+                                                            <td class="r8" valign="top" style="padding-right: 16px;">
+                                                                <a href="#"><img src="https://i.ibb.co/nftcQHT/linkedin.png" alt="linkedin" width="44" height="auto" style="display: block;"></a>
+
+                                                            </td>
+                                                            <td class="r8" valign="top" style="padding-right: 16px;">
+                                                                <a href="#"><img src="https://i.ibb.co/r4WrYrG/email.png" alt="email" width="44" height="auto" style="display: block;"></a>
+
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                             </table>
+
+                            </td>
+                        </tr>
+                    </table>
+
+                </td>
+            </tr>
+        </table>
+        
+    </td>
+</tr>
+
 
 
 			
